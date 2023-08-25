@@ -10,11 +10,24 @@ public class Lesson_4_1_array {
         //Удобный вариант иниуиализации массива
         int[] scoreMarks = new int[]{5, 5, 3, 2, 4, 5, 4, 3, 3, 4, 2};
 
-        int sum = 0;
+//        int sum;
+//        sum = 0;
+
+        int min = Integer.MAX_VALUE;
+
         for (int i = 0; i < scoreMarks.length; i = i + 1) {
-            sum = sum + scoreMarks[i];
+            //sum = sum + scoreMarks[i];
+            int elem = scoreMarks[i];
+            if (elem < min) {
+                min = elem;
+            }
+            System.out.println(elem);
+
         }
-        System.out.println(sum * 1.0 / scoreMarks.length);
+
+        //System.out.println(sum * 1.0 / scoreMarks.length);
+//        sum = sum + 10;
+//        System.out.println(sum);
     }
     // Правильный вариант инициализации массива, значение по умолчанию 0
 //        int[] scoreMarks1 = new int[10];
